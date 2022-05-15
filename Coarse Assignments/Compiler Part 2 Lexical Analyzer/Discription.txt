@@ -1,0 +1,21 @@
+The Tokens for the Project Language are here:  CS4100projectlangSP22-TOKENS.pdf Download CS4100projectlangSP22-TOKENS.pdf
+
+The Lexical Analyzer project specification is here:  CS4100Phase2-LexAssignSP22.pdf Download CS4100Phase2-LexAssignSP22.pdf
+
+The input test file:  LexicalTestSP22.txt Download LexicalTestSP22.txt
+
+Lexical source:  Lexical.java Download Lexical.java
+
+and main.java: main.java Download main.java
+
+A sample of code for getIdent is here...   CS4100-getident.txt Download CS4100-getident.txt
+
+LEXICAL turn-in requirements
+
+To get complete credit for Lexical, you are to turn in:
+
+1) Lexical.java, SymbolTable.java, and ReserveTable.java, all compatible and runnable with the posted main.java with no logical modifications to main.java, only file name adjustments!
+
+2) Your console output captured and named as "Output2.txt".  It should be virtually identical to the posted  LexicalOutputResultSP22.txt Download LexicalOutputResultSP22.txt  file.  It must have been run using the posted LexicalTestSP22.txt file as input.  Note that the student output must include your own student-defined 5-char mnemonics, replacing the illustrative 2-character mnemonics appearing in the sample output!
+
+3) Your dump of the symbol table, named "symboltable2.txt".  It should match VERY CLOSELY the  LexicalSymbolTableSP22.txt Download LexicalSymbolTableSP22.txt    example file.

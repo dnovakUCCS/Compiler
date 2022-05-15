@@ -1,0 +1,15 @@
+The details are here:  Projectfoundation-HW2SymbolAndQuadSP22df Download Projectfoundation-HW2SymbolAndQuadSP22df
+
+The MAIN.JAVA for this assignment is here: mainHW2.java Download mainHW2.java
+
+The results file you turn-in with your NAME and 'SP2022' as the first line printed by main should be similar to:  outputHW2.txt Download outputHW2.txt
+
+The symbol and quad table print to files should be similar to:
+
+symtableHW2.txt  Download symtableHW2.txt 
+
+quadTableHW2.txt Download quadTableHW2.txt
+
+Carefully copy and paste the content into your own main program. MODIFY the file name for the PrintSymbolTable and PrintQuadTable to match your system drive names. Note that to get 1 '\' you need to escape it with a second one, like '\\', as shown in the main code.
+
+NOTE: The main program expects all your classes to be in package ADT. See the IMPORT command at the top.

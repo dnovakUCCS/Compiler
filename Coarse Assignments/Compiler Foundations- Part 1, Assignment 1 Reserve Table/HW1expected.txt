@@ -1,0 +1,20 @@
+ant -f D:\\JavaProj\\FA21HW1 -Dnb.internal.action.name=run run
+init:
+Deleting: D:\JavaProj\FA21HW1\build\built-jar.properties
+deps-jar:
+Updating property file: D:\JavaProj\FA21HW1\build\built-jar.properties
+Warning: fa21hw1\main.java modified in the future.
+Compiling 1 source file to D:\JavaProj\FA21HW1\build\classes
+compile:
+run:
+The Code for 'over' is 8
+The Code for 'DOG' is 5
+The Code for 'Cat' is 15
+The Code for 'gone' is -1
+
+The Name for 11 is APPLE
+The Name for 5 is Dog
+The Name for 8 is Over
+The Name for 28 is 
+Saving Printed Table to d:\res.txt
+BUILD SUCCESSFUL (total time: 0 seconds)

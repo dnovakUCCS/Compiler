@@ -1,0 +1,19 @@
+This part of the project uses the Part 1-1 and 1-2 data structures to create an interpreter class.
+
+The assignment is detailed here  Projectfoundation-Part1-3-SP22 Download Projectfoundation-Part1-3-SP22
+
+Read carefully, and note the methods which need to be implemented. 
+
+The previously uploaded Quad opcodes which the Interpreter will recognize and execute are detailed here,  along with the pseudo-code for the Interpret function, with functional examples of each kind of opcode to be implemented in the Interpret method  IntroToQuads.pdf Download IntroToQuads.pdf
+
+The needed Quad opcodes and Symbol Table entries to execute the first of the two required 'programs' to be interpreted (factorial) are fully explained and provided in this document 
+
+CS4100QuadTranslationExampleSP22.pdf Download CS4100QuadTranslationExampleSP22.pdf   - NOTE Trace listed here includes SymbolTable names, not required, see main program output below
+
+The summation program uses everything present in the factorial program, but changes the accumulated product to an accumulated sum by using addition instead of multiplication. The student is expected to be able to make this one row Quad Table change.
+
+The main program which will set up and call the Interpret function is here  main1-3-SP22.java Download main1-3-SP22.java - See comment at top regarding Trace format
+
+The resulting output of running this main is here main1-3-SP22-output.txt Download main1-3-SP22-output.txt   - This is the correct output to be matched using code from main ^
+
+Please follow submission specs carefully.  Rubric to be posted shortly.

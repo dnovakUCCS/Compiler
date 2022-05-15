@@ -1,0 +1,17 @@
+                        case _READ:
+                          // Assume operand must be an integer
+                            {
+							 // Make a scanner to read from CONSOLE
+                             Scanner sc = new Scanner(System.in);
+							 // Put out a prompt to the user
+                             System.out.print('>');
+                             // Read one integer only   
+                             int readval = sc.nextInt();    
+                             // Op3 has the ST index we need, update it
+							 S.UpdateSymbol(op3,'i',readval);
+							 // Deallocate the scanner
+                             sc = null;
+                             PC++;
+                             break;
+                            }
+

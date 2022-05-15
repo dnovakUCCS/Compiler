@@ -1,0 +1,25 @@
+ant -f D:\\JavaProj\\FA21HW2B -Dnb.internal.action.name=run run
+init:
+Deleting: D:\JavaProj\FA21HW2B\build\built-jar.properties
+deps-jar:
+Updating property file: D:\JavaProj\FA21HW2B\build\built-jar.properties
+Warning: FA21HW2\main.java modified in the future.
+Compiling 1 source file to D:\JavaProj\FA21HW2B\build\classes
+compile:
+run:
+Testing the Symbol Table
+
+testint is located at 0
+PI is located at 4
+  the KIND for PI is C
+The KIND for slot 5 is C, data type is s and the value: Please Enter A Value
+BadVal search returned -1
+
+Testing the Quad Table
+
+At the start, NextQuad is: 0
+After one add, NextQuad is: 1
+Quad value at (4,3) is: 9
+Quad value at (4,3) is: 17
+Finally NextQuad is: 5
+BUILD SUCCESSFUL (total time: 1 second)

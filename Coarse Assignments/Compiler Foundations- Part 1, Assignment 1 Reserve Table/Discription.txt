@@ -1,0 +1,15 @@
+This part of the project introduces first of the essential data structures that will be used throughout the remainder of the project this semester, so it is important to implement each Abstract Data Type (ADT) exactly as described.
+
+The assignment is detailed here  Projectfoundation-HW1Reserve-SP22.pdf Download Projectfoundation-HW1Reserve-SP22.pdf
+
+The MAIN.JAVA for this assignment is here mainHW1.java Download mainHW1.java
+
+The results file you turn in, created on your own machine, should be similar to HW1expected.txt Download HW1expected.txt
+
+Carefully copy and paste the content of mainHW1.java into your own main program. MODIFY the file name for the PrintReserveTable to match your system drive names. Note that to get 1 '' you need to escape it with a second one, like ''.
+
+NOTE The main program expects your ReserveTable to be in package ADT, so create a package named ADT, which will be used throughout the semester for all of the ADTs.  See the IMPORT command at the top.
+
+Follow the submission specs carefully.  You should have everything here that you need to complete the assignment.  It should only take a few hours of coding.
+
+ANOTHER NOTE  It is ok to use standard Java data-type libraries such as an ArrayList.  A very simple solution is using a Java Array of object, with each object being an internal class to the ReserveTable, containing a Name string and a Code integer.

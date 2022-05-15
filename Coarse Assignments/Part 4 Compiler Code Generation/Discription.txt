@@ -1,0 +1,49 @@
+The explanation of this assignment is here:  CS4100-5100CodeGenAssignwCFGSP22.pdf Download CS4100-5100CodeGenAssignwCFGSP22.pdf
+
+NOTE:  <variable> does not need to call <identifier>, see sample code below.
+
+Note that the CFG contained there has been simplified and shortened to accommodate the scope of this last part of the compiler project.
+
+For reference, the three Code Generation documents explaining how to generate Quads during syntax parsing are here:
+
+CodeGeneration-IntroSP22.pdf Download CodeGeneration-IntroSP22.pdf
+
+CodeGeneration-Part2-IFRepeatSP22.pdf Download CodeGeneration-Part2-IFRepeatSP22.pdf
+
+CodeGeneration-Part3-While-IfelseSP22.pdf Download CodeGeneration-Part3-While-IfelseSP22.pdf
+
+Sample code for Syntactic Parse (where ST and Quad tables get printed), Variables and Constants, READLN, PRINTLN will be here: SyntaxSample.txt Download SyntaxSample.txt
+
+NEW! The READ opcode implementation for the interpreter, just  a suggested implementation:  InterpreterREAD.txt Download InterpreterREAD.txt  
+
+MAIN should look like this:  mainCODEGEN22.java Download mainCODEGEN22.java
+
+Be sure to set the input filename in main.java as needed!
+
+The basic test file for the mathematical expression, READLN and PRINTLN will be here:  CodeGenBASICsp22.txt Download CodeGenBASICsp22.txt
+
+And the expected basic output (console, quads, symbols will be here):  CodeGenBASICsp22Output.txt Download CodeGenBASICsp22Output.txt
+
+CodeGenBASICsp22QUADS.txt Download CodeGenBASICsp22QUADS.txt
+
+CodeGenBASICsp22ST-before.txt Download CodeGenBASICsp22ST-before.txt
+
+CodeGenBASICsp22ST-after.txt Download CodeGenBASICsp22ST-after.txt
+
+You should make sure your results match the ones above!
+
+Turn-in Full Test File:  CodeGenFULL-SP22.txt Download CodeGenFULL-SP22.txt
+
+Sample output of Full Test File:  CodeGenFULL-SP22OUTPUT.txt Download CodeGenFULL-SP22OUTPUT.txt
+
+Be sure to edit the CodeGenFULL-SP22.txt file to insert YOUR NAME before compiling and running it!
+
+ TO RECEIVE  ANY  CREDIT ALL THE FOLLOWING FILES MUST BE TURNED IN:
+
+1 & 2) JAVA code for your Syntactic (with all Code Generation mods included), and the working Interpreter Java code
+
+3) UNEDITED Console OUTPUT txt for the run using CodeGenFULL-SP22.txt as input
+
+4) Quad output from the compilation, and which is executed by the Interpreter; note indexes on rows in BASIC samples above
+
+5 & 6) Symbol Table before execution and after execution files from the input file run; note indexes on rows in BASIC samples above

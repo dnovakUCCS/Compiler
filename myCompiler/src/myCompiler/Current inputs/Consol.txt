@@ -1,0 +1,569 @@
+[Console output redirected to file:C:\Users\djnvk\Desktop\Compiler Syntax Analyzer Part 3A SP22\consol output\Console output]
+Drake Novak,6995,CS4100,PRING 2022,Eclipse
+Parsing C:\Users\djnvk\eclipse-workspace\myCompiler\src\myCompiler\Current inputs\CodeGenFULL-SP22.txt
+0001 PROGRAM Codegen;
+C:\Users\djnvk\eclipse-workspace\myCompiler\src\myCompiler\Current inputs\CodeGenFULL-SP22
+	PRGRM | 	0015 | 	PROGRAM
+--> Entering Program
+	IDENT | 	0050 | 	Codegen
+	SCOLN | 	0036 | 	;
+0002 begin
+	BEGIN | 	0011 | 	begin
+ --> Entering Block
+0003 println("FULL SP22 TEST File for Drake Novak");
+	PRNTL | 	0009 | 	println
+  --> Entering Statement
+   --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	FULL SP22 TEST File for Drake Novak
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+   <-- Exiting handlePrintln
+  <-- Exiting Statement
+0004 
+0005 factorial := 1;
+	IDENT | 	0050 | 	factorial
+  --> Entering Statement
+   --> Entering handleAssignment
+    --> Entering Variable
+     --> Entering Identifier
+	ASIGN | 	0037 | 	:=
+     <-- Exiting Identifier
+    <-- Exiting Variable
+	INTID | 	0051 | 	1
+    --> Entering SimpleExpression
+     --> Entering Term
+      --> Entering Factor
+       --> Entering UnsignedConstant
+        --> Entering UnsignedNumber
+	SCOLN | 	0036 | 	;
+        <-- Exiting UnsignedNumber
+       <-- Exiting UnsignedConstant
+      <-- Exiting Factor
+     <-- Exiting Term
+    <-- Exiting SimpleExpression
+   <-- Exiting handleAssignment
+  <-- Exiting Statement
+0006 println("Enter the value 5 for n:");
+	PRNTL | 	0009 | 	println
+  --> Entering Statement
+   --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	Enter the value 5 for n:
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+   <-- Exiting handlePrintln
+  <-- Exiting Statement
+0007 readln(n);  {should be same as n := 5;}
+	READL | 	0010 | 	readln
+  --> Entering Statement
+   --> Entering handleReadln
+	LPTHS | 	0034 | 	(
+	IDENT | 	0050 | 	n
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+   <-- Exiting handleReadln
+  <-- Exiting Statement
+0008 count := 1;
+	IDENT | 	0050 | 	count
+  --> Entering Statement
+   --> Entering handleAssignment
+    --> Entering Variable
+     --> Entering Identifier
+	ASIGN | 	0037 | 	:=
+     <-- Exiting Identifier
+    <-- Exiting Variable
+	INTID | 	0051 | 	1
+    --> Entering SimpleExpression
+     --> Entering Term
+      --> Entering Factor
+       --> Entering UnsignedConstant
+        --> Entering UnsignedNumber
+	SCOLN | 	0036 | 	;
+        <-- Exiting UnsignedNumber
+       <-- Exiting UnsignedConstant
+      <-- Exiting Factor
+     <-- Exiting Term
+    <-- Exiting SimpleExpression
+   <-- Exiting handleAssignment
+  <-- Exiting Statement
+0009 dowhile count <= n
+	DOWHL | 	0014 | 	dowhile
+  --> Entering Statement
+	IDENT | 	0050 | 	count
+   --> Entering relexpression
+    --> Entering SimpleExpression
+     --> Entering Term
+      --> Entering Factor
+       --> Entering Variable
+        --> Entering Identifier
+	LESEQ | 	0041 | 	<=
+        <-- Exiting Identifier
+       <-- Exiting Variable
+      <-- Exiting Factor
+     <-- Exiting Term
+    <-- Exiting SimpleExpression
+    --> Entering Relop
+	IDENT | 	0050 | 	n
+    <-- Exiting Relp
+    --> Entering SimpleExpression
+     --> Entering Term
+      --> Entering Factor
+       --> Entering Variable
+        --> Entering Identifier
+0010   begin
+	BEGIN | 	0011 | 	begin
+        <-- Exiting Identifier
+       <-- Exiting Variable
+      <-- Exiting Factor
+     <-- Exiting Term
+    <-- Exiting SimpleExpression
+    --> Entering RelopToOpcode
+    <-- Exiting RelopToOpcode
+    --> Entering relexpression
+     --> Entering Statement
+0011   factorial := factorial*count;
+	IDENT | 	0050 | 	factorial
+      --> Entering Statement
+       --> Entering handleAssignment
+        --> Entering Variable
+         --> Entering Identifier
+	ASIGN | 	0037 | 	:=
+         <-- Exiting Identifier
+        <-- Exiting Variable
+	IDENT | 	0050 | 	factorial
+        --> Entering SimpleExpression
+         --> Entering Term
+          --> Entering Factor
+           --> Entering Variable
+            --> Entering Identifier
+	MULTP | 	0031 | 	*
+            <-- Exiting Identifier
+           <-- Exiting Variable
+          <-- Exiting Factor
+          --> Entering Mulop
+	IDENT | 	0050 | 	count
+          <-- Exiting Mulop
+          --> Entering Factor
+           --> Entering Variable
+            --> Entering Identifier
+	SCOLN | 	0036 | 	;
+            <-- Exiting Identifier
+           <-- Exiting Variable
+          <-- Exiting Factor
+         <-- Exiting Term
+        <-- Exiting SimpleExpression
+       <-- Exiting handleAssignment
+      <-- Exiting Statement
+0012   count := count + 1
+	IDENT | 	0050 | 	count
+      --> Entering Statement
+       --> Entering handleAssignment
+        --> Entering Variable
+         --> Entering Identifier
+	ASIGN | 	0037 | 	:=
+         <-- Exiting Identifier
+        <-- Exiting Variable
+	IDENT | 	0050 | 	count
+        --> Entering SimpleExpression
+         --> Entering Term
+          --> Entering Factor
+           --> Entering Variable
+            --> Entering Identifier
+	PLUS_ | 	0032 | 	+
+            <-- Exiting Identifier
+           <-- Exiting Variable
+          <-- Exiting Factor
+         <-- Exiting Term
+         --> Entering Addop
+	INTID | 	0051 | 	1
+         <-- Exiting Addop
+         --> Entering Term
+          --> Entering Factor
+           --> Entering UnsignedConstant
+            --> Entering UnsignedNumber
+0013   end;
+	_END_ | 	0012 | 	end
+            <-- Exiting UnsignedNumber
+           <-- Exiting UnsignedConstant
+          <-- Exiting Factor
+         <-- Exiting Term
+        <-- Exiting SimpleExpression
+       <-- Exiting handleAssignment
+      <-- Exiting Statement
+	SCOLN | 	0036 | 	;
+     <-- Exiting Statement
+    <-- Exiting Statement
+0014 println("The calculation of 5! is:");
+	PRNTL | 	0009 | 	println
+    --> Entering Statement
+     --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	The calculation of 5! is:
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+     <-- Exiting handlePrintln
+    <-- Exiting Statement
+0015 println(factorial);
+	PRNTL | 	0009 | 	println
+    --> Entering Statement
+     --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	IDENT | 	0050 | 	factorial
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering Variable
+          --> Entering Identifier
+	RPTHS | 	0035 | 	)
+          <-- Exiting Identifier
+         <-- Exiting Variable
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+	SCOLN | 	0036 | 	;
+     <-- Exiting handlePrintln
+    <-- Exiting Statement
+0016 println(" "); {blank line}
+	PRNTL | 	0009 | 	println
+    --> Entering Statement
+     --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	 
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+     <-- Exiting handlePrintln
+    <-- Exiting Statement
+0017 
+0018 {count should be 6 at this point}
+0019 dowhile count > 1
+	DOWHL | 	0014 | 	dowhile
+    --> Entering Statement
+	IDENT | 	0050 | 	count
+     --> Entering relexpression
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering Variable
+          --> Entering Identifier
+	GRETR | 	0038 | 	>
+          <-- Exiting Identifier
+         <-- Exiting Variable
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+      --> Entering Relop
+	INTID | 	0051 | 	1
+      <-- Exiting Relp
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering UnsignedConstant
+          --> Entering UnsignedNumber
+0020   begin
+	BEGIN | 	0011 | 	begin
+          <-- Exiting UnsignedNumber
+         <-- Exiting UnsignedConstant
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+      --> Entering RelopToOpcode
+      <-- Exiting RelopToOpcode
+      --> Entering relexpression
+       --> Entering Statement
+0021   println(count);
+	PRNTL | 	0009 | 	println
+        --> Entering Statement
+         --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	IDENT | 	0050 | 	count
+          --> Entering SimpleExpression
+           --> Entering Term
+            --> Entering Factor
+             --> Entering Variable
+              --> Entering Identifier
+	RPTHS | 	0035 | 	)
+              <-- Exiting Identifier
+             <-- Exiting Variable
+            <-- Exiting Factor
+           <-- Exiting Term
+          <-- Exiting SimpleExpression
+	SCOLN | 	0036 | 	;
+         <-- Exiting handlePrintln
+        <-- Exiting Statement
+0022   if count - 2 > 2 then
+	_IF__ | 	0004 | 	if
+        --> Entering Statement
+	IDENT | 	0050 | 	count
+         --> Entering relexpression
+          --> Entering SimpleExpression
+           --> Entering Term
+            --> Entering Factor
+             --> Entering Variable
+              --> Entering Identifier
+	MINUS | 	0033 | 	-
+              <-- Exiting Identifier
+             <-- Exiting Variable
+            <-- Exiting Factor
+           <-- Exiting Term
+           --> Entering Addop
+	INTID | 	0051 | 	2
+           <-- Exiting Addop
+           --> Entering Term
+            --> Entering Factor
+             --> Entering UnsignedConstant
+              --> Entering UnsignedNumber
+	GRETR | 	0038 | 	>
+              <-- Exiting UnsignedNumber
+             <-- Exiting UnsignedConstant
+            <-- Exiting Factor
+           <-- Exiting Term
+          <-- Exiting SimpleExpression
+          --> Entering Relop
+	INTID | 	0051 | 	2
+          <-- Exiting Relp
+          --> Entering SimpleExpression
+           --> Entering Term
+            --> Entering Factor
+             --> Entering UnsignedConstant
+              --> Entering UnsignedNumber
+	THEN_ | 	0005 | 	then
+              <-- Exiting UnsignedNumber
+             <-- Exiting UnsignedConstant
+            <-- Exiting Factor
+           <-- Exiting Term
+          <-- Exiting SimpleExpression
+          --> Entering RelopToOpcode
+          <-- Exiting RelopToOpcode
+          --> Entering relexpression
+0023     println("Count - 2 is greater than 2")
+	PRNTL | 	0009 | 	println
+           --> Entering Statement
+            --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	Count - 2 is greater than 2
+	RPTHS | 	0035 | 	)
+0024   else
+	ELSE_ | 	0006 | 	else
+            <-- Exiting handlePrintln
+           <-- Exiting Statement
+0025     println("Count - 2 is less than or equal to 2");
+	PRNTL | 	0009 | 	println
+           --> Entering Statement
+            --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	Count - 2 is less than or equal to 2
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+            <-- Exiting handlePrintln
+           <-- Exiting Statement
+          <-- Exiting Statement
+0026   count := count -1
+	IDENT | 	0050 | 	count
+          --> Entering Statement
+           --> Entering handleAssignment
+            --> Entering Variable
+             --> Entering Identifier
+	ASIGN | 	0037 | 	:=
+             <-- Exiting Identifier
+            <-- Exiting Variable
+	IDENT | 	0050 | 	count
+            --> Entering SimpleExpression
+             --> Entering Term
+              --> Entering Factor
+               --> Entering Variable
+                --> Entering Identifier
+	MINUS | 	0033 | 	-
+                <-- Exiting Identifier
+               <-- Exiting Variable
+              <-- Exiting Factor
+             <-- Exiting Term
+             --> Entering Addop
+	INTID | 	0051 | 	1
+             <-- Exiting Addop
+             --> Entering Term
+              --> Entering Factor
+               --> Entering UnsignedConstant
+                --> Entering UnsignedNumber
+0027   end;
+	_END_ | 	0012 | 	end
+                <-- Exiting UnsignedNumber
+               <-- Exiting UnsignedConstant
+              <-- Exiting Factor
+             <-- Exiting Term
+            <-- Exiting SimpleExpression
+           <-- Exiting handleAssignment
+          <-- Exiting Statement
+	SCOLN | 	0036 | 	;
+         <-- Exiting Statement
+        <-- Exiting Statement
+0028 println("Count is: ");
+	PRNTL | 	0009 | 	println
+        --> Entering Statement
+         --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	Count is: 
+	RPTHS | 	0035 | 	)
+	SCOLN | 	0036 | 	;
+         <-- Exiting handlePrintln
+        <-- Exiting Statement
+0029 println(count);
+	PRNTL | 	0009 | 	println
+        --> Entering Statement
+         --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	IDENT | 	0050 | 	count
+          --> Entering SimpleExpression
+           --> Entering Term
+            --> Entering Factor
+             --> Entering Variable
+              --> Entering Identifier
+	RPTHS | 	0035 | 	)
+              <-- Exiting Identifier
+             <-- Exiting Variable
+            <-- Exiting Factor
+           <-- Exiting Term
+          <-- Exiting SimpleExpression
+	SCOLN | 	0036 | 	;
+         <-- Exiting handlePrintln
+        <-- Exiting Statement
+0030 println("All done.")
+	PRNTL | 	0009 | 	println
+        --> Entering Statement
+         --> Entering handlePrintln
+	LPTHS | 	0034 | 	(
+	STRID | 	0053 | 	All done.
+	RPTHS | 	0035 | 	)
+0031 end. 
+	_END_ | 	0012 | 	end
+         <-- Exiting handlePrintln
+        <-- Exiting Statement
+	PERID | 	0048 | 	.
+       <-- Exiting Block
+Success.
+      <-- Exiting Program
+Novak Drake SP2022
+PC = 0000: PRINT 00, 00, 03
+FULL SP22 TEST File for Drake Novak
+PC = 0001: MOV   01, 00, 04
+PC = 0002: PRINT 00, 00, 05
+Enter the value 5 for n:
+PC = 0003: READ  00, 00, 06
+>5
+PC = 0004: MOV   01, 00, 07
+PC = 0005: SUB   07, 06, 08
+PC = 0006: JP    08, 00, 12
+PC = 0007: MUL   04, 07, 09
+PC = 0008: MOV   09, 00, 04
+PC = 0009: ADD   07, 01, 10
+PC = 0010: MOV   10, 00, 07
+PC = 0011: JMP   00, 00, 05
+PC = 0005: SUB   07, 06, 08
+PC = 0006: JP    08, 00, 12
+PC = 0007: MUL   04, 07, 09
+PC = 0008: MOV   09, 00, 04
+PC = 0009: ADD   07, 01, 10
+PC = 0010: MOV   10, 00, 07
+PC = 0011: JMP   00, 00, 05
+PC = 0005: SUB   07, 06, 08
+PC = 0006: JP    08, 00, 12
+PC = 0007: MUL   04, 07, 09
+PC = 0008: MOV   09, 00, 04
+PC = 0009: ADD   07, 01, 10
+PC = 0010: MOV   10, 00, 07
+PC = 0011: JMP   00, 00, 05
+PC = 0005: SUB   07, 06, 08
+PC = 0006: JP    08, 00, 12
+PC = 0007: MUL   04, 07, 09
+PC = 0008: MOV   09, 00, 04
+PC = 0009: ADD   07, 01, 10
+PC = 0010: MOV   10, 00, 07
+PC = 0011: JMP   00, 00, 05
+PC = 0005: SUB   07, 06, 08
+PC = 0006: JP    08, 00, 12
+PC = 0007: MUL   04, 07, 09
+PC = 0008: MOV   09, 00, 04
+PC = 0009: ADD   07, 01, 10
+PC = 0010: MOV   10, 00, 07
+PC = 0011: JMP   00, 00, 05
+PC = 0005: SUB   07, 06, 08
+PC = 0006: JP    08, 00, 12
+PC = 0012: PRINT 00, 00, 11
+The calculation of 5! is:
+PC = 0013: PRINT 00, 00, 04
+120
+PC = 0014: PRINT 00, 00, 12
+ 
+PC = 0015: SUB   07, 01, 13
+PC = 0016: JNP   13, 00, 27
+PC = 0017: PRINT 00, 00, 07
+6
+PC = 0018: SUB   07, 14, 15
+PC = 0019: SUB   15, 14, 16
+PC = 0020: JNP   16, 00, 23
+PC = 0021: PRINT 00, 00, 17
+Count - 2 is greater than 2
+PC = 0022: JMP   00, 00, 24
+PC = 0024: SUB   07, 01, 19
+PC = 0025: MOV   19, 00, 07
+PC = 0026: JMP   00, 00, 15
+PC = 0015: SUB   07, 01, 13
+PC = 0016: JNP   13, 00, 27
+PC = 0017: PRINT 00, 00, 07
+5
+PC = 0018: SUB   07, 14, 15
+PC = 0019: SUB   15, 14, 16
+PC = 0020: JNP   16, 00, 23
+PC = 0021: PRINT 00, 00, 17
+Count - 2 is greater than 2
+PC = 0022: JMP   00, 00, 24
+PC = 0024: SUB   07, 01, 19
+PC = 0025: MOV   19, 00, 07
+PC = 0026: JMP   00, 00, 15
+PC = 0015: SUB   07, 01, 13
+PC = 0016: JNP   13, 00, 27
+PC = 0017: PRINT 00, 00, 07
+4
+PC = 0018: SUB   07, 14, 15
+PC = 0019: SUB   15, 14, 16
+PC = 0020: JNP   16, 00, 23
+PC = 0023: PRINT 00, 00, 18
+Count - 2 is less than or equal to 2
+PC = 0024: SUB   07, 01, 19
+PC = 0025: MOV   19, 00, 07
+PC = 0026: JMP   00, 00, 15
+PC = 0015: SUB   07, 01, 13
+PC = 0016: JNP   13, 00, 27
+PC = 0017: PRINT 00, 00, 07
+3
+PC = 0018: SUB   07, 14, 15
+PC = 0019: SUB   15, 14, 16
+PC = 0020: JNP   16, 00, 23
+PC = 0023: PRINT 00, 00, 18
+Count - 2 is less than or equal to 2
+PC = 0024: SUB   07, 01, 19
+PC = 0025: MOV   19, 00, 07
+PC = 0026: JMP   00, 00, 15
+PC = 0015: SUB   07, 01, 13
+PC = 0016: JNP   13, 00, 27
+PC = 0017: PRINT 00, 00, 07
+2
+PC = 0018: SUB   07, 14, 15
+PC = 0019: SUB   15, 14, 16
+PC = 0020: JNP   16, 00, 23
+PC = 0023: PRINT 00, 00, 18
+Count - 2 is less than or equal to 2
+PC = 0024: SUB   07, 01, 19
+PC = 0025: MOV   19, 00, 07
+PC = 0026: JMP   00, 00, 15
+PC = 0015: SUB   07, 01, 13
+PC = 0016: JNP   13, 00, 27
+PC = 0027: PRINT 00, 00, 20
+Count is: 
+PC = 0028: PRINT 00, 00, 07
+1
+PC = 0029: PRINT 00, 00, 21
+All done.
+PC = 0030: STOP  00, 00, 00
+Execution terminated by program STOP.
+Done.
